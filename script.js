@@ -27,5 +27,17 @@ function division(a, b) {
 console.log(division(81, 9))
 
 let firstNumber = 0
-let operator = 0;
+let operator = "";
 let secondNumber = 0
+
+function operate(operator, num1, num2) {
+    if (operator = plus) {
+        addition(num1, num2)
+    } else if (operator = minus) {
+        subtraction(num1, num2)
+    } else if (operator = multiply) {
+        multiplication(num1, num2)
+    } else if (operator = divide) {
+        division(num1, num2)
+    }
+}
