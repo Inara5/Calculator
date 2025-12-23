@@ -25,3 +25,7 @@ function division(a, b) {
 }
 
 console.log(division(81, 9))
+
+let firstNumber = 0
+let operator = 0;
+let secondNumber = 0
