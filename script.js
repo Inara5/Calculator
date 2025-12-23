@@ -1,12 +1,9 @@
-function addition(...num) {
-    let sum = 0
-    for (number of num) {
-        sum += number
-    }
+function addition(a, b) {
+    let sum = a + b
     return sum
 }
 
-console.log(addition(223, 99, 100))
+console.log(addition(223, 100))
 
 function subtraction(a, b) {
     let difference = a - b
