@@ -18,3 +18,10 @@ function multiplication(a, b) {
 }
 
 console.log(multiplication(9, 9))
+
+function division(a, b) {
+    let quotient = a / b
+    return quotient
+}
+
+console.log(division(81, 9))
