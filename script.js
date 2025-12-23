@@ -11,3 +11,10 @@ function subtraction(a, b) {
 }
 
 console.log(subtraction(100, 9))
+
+function multiplication(a, b) {
+    let product = a * b
+    return product
+}
+
+console.log(multiplication(9, 9))
