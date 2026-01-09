@@ -8,7 +8,7 @@
     background-color: lightgray;
     border: solid black;
     border-radius: 5%;
-    height: 800px;
+    height: 900px;
     width: 600px;
 }
 
@@ -32,7 +32,7 @@
     flex-wrap: wrap;
     justify-self: center;
     border: solid black;
-    height: 500px;
+    height: 600px;
     width: 500px;
 }
 
@@ -47,12 +47,14 @@
     font-family: sans, "sans serif", "Times New Roman"
 }
 
-#clear {
+#backspace {
     background-color: darkred;
+    font-family: sans, "sans-serif", "Times New Roman";
 }
 
-#decimal {
-    color: black;
+#clear {
+    background-color: darkred;
+    font-family: sans, "sans-serif", "Times New Roman";
 }
 
 .number {
@@ -65,4 +67,10 @@
 
 #equals {
     background-color: teal;
+}
+
+.clear {
+    border-radius: 5%;
+    height: 100px;
+    width: 100px;
 }
