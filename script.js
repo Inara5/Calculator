@@ -98,8 +98,10 @@ zero.addEventListener("click", (e) => {
 
 plus.addEventListener("click", () => {
     counter += 1
-    if (display.textContent == "" && operator !== "" || done !== 0 && operator !== "") {
+    console.log(counter)
+    if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
+        counter -= 1
     } else if (counter > 1) {
         secondNumber = Number(display.textContent)
         let answer = operate(operator, firstNumber, secondNumber)
@@ -115,8 +117,10 @@ plus.addEventListener("click", () => {
 })
 minus.addEventListener("click", () => {
     counter += 1
-    if (display.textContent == "" && operator !== "" || done !== 0 && operator !== "") {
+    console.log(counter)
+    if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
+        counter -= 1
     } else if (counter > 1) {
         secondNumber = Number(display.textContent)
         let answer = operate(operator, firstNumber, secondNumber)
@@ -132,8 +136,9 @@ minus.addEventListener("click", () => {
 })
 times.addEventListener("click", () => {
     counter += 1
-    if (display.textContent == "" && operator !== "" || done !== 0 && operator !== "") {
+    if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
+        counter -= 1
     } else if (counter > 1) {
         secondNumber = Number(display.textContent)
         let answer = operate(operator, firstNumber, secondNumber)
@@ -149,8 +154,9 @@ times.addEventListener("click", () => {
 })
 divide.addEventListener("click", () => {
     counter += 1
-    if (display.textContent == "" && operator !== "" || done !== 0 && operator !== "") {
+    if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
+        counter -= 1
     } else if (counter > 1) {
         secondNumber = Number(display.textContent)
         let answer = operate(operator, firstNumber, secondNumber)
@@ -167,7 +173,7 @@ divide.addEventListener("click", () => {
 
 equals.addEventListener("click", () => {
     secondNumber = Number(display.textContent)
-    if (firstNumber == 0 && secondNumber == 0) {
+    if (firstNumber == 0 && secondNumber == 0 && operator == "divide") {
         display.textContent = "Not Possible !"
         firstNumber = 0
         operator = ""
