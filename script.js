@@ -188,11 +188,9 @@ equals.addEventListener("click", () => {
         firstNumber = 0
         operator = ""
         secondNumber = 0
-        console.log(answer)
     }
     
 })
-//12 * 12 / 2 = 288 ??? solution: operator = operator pressed when counter > 1
 
 clear.addEventListener("click", () => {
     display.textContent = ""
@@ -236,8 +234,4 @@ function operate(operator, num1, num2) {
     } else if (operator == "divide") {
         return division(num1, num2)
     }
-}
-
-function reset() {
-    
 }
