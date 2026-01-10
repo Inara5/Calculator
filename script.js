@@ -38,6 +38,7 @@ document.addEventListener("keydown", (e) => {
         }
     })
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "Backspace") {
         if (done > 0) {
@@ -46,10 +47,10 @@ document.addEventListener("keydown", (e) => {
     display.textContent = display.textContent.slice(0, -1)
     }
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "+") {
         counter += 1
-    console.log(counter)
     if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
         counter -= 1
@@ -67,10 +68,10 @@ document.addEventListener("keydown", (e) => {
     }
     }
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "-") {
         counter += 1
-    console.log(counter)
     if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
         counter -= 1
@@ -88,6 +89,7 @@ document.addEventListener("keydown", (e) => {
     }
     }
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "*") {
         counter += 1
@@ -108,6 +110,7 @@ document.addEventListener("keydown", (e) => {
     }
     }
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "/") {
         counter += 1
@@ -128,6 +131,7 @@ document.addEventListener("keydown", (e) => {
     }
     }
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "Enter") {
         secondNumber = Number(display.textContent)
@@ -155,6 +159,7 @@ document.addEventListener("keydown", (e) => {
     }
     }
 })
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "c") {
         display.textContent = ""
@@ -173,6 +178,7 @@ one.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 two.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -180,6 +186,7 @@ two.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 three.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -187,6 +194,7 @@ three.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 four.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -194,6 +202,7 @@ four.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 five.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -201,6 +210,7 @@ five.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 six.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -208,6 +218,7 @@ six.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 seven.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -215,6 +226,7 @@ seven.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 eight.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -222,6 +234,7 @@ eight.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 nine.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -229,6 +242,7 @@ nine.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
+
 zero.addEventListener("click", (e) => {
     if (done > 0) {
         display.textContent = ""
@@ -236,14 +250,7 @@ zero.addEventListener("click", (e) => {
     done = 0
     display.textContent += e.target.textContent
 })
-/*decimal.addEventListener("click", (e) => {
-    if (done > 0) {
-        display.textContent = ""
-    }
-    done = 0
-    display.textContent += e.target.textContent
-}, {once:true}
-)*/
+
 backspace.addEventListener("click", () => {
     if (done > 0) {
         display.textContent = ""
@@ -253,7 +260,6 @@ backspace.addEventListener("click", () => {
 
 plus.addEventListener("click", () => {
     counter += 1
-    console.log(counter)
     if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
         counter -= 1
@@ -270,9 +276,9 @@ plus.addEventListener("click", () => {
         display.textContent = ""
     }
 })
+
 minus.addEventListener("click", () => {
     counter += 1
-    console.log(counter)
     if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
         alert("Please choose a number first !")
         counter -= 1
@@ -289,6 +295,7 @@ minus.addEventListener("click", () => {
         display.textContent = ""
     }
 })
+
 times.addEventListener("click", () => {
     counter += 1
     if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
@@ -307,6 +314,7 @@ times.addEventListener("click", () => {
         display.textContent = ""
     }
 })
+
 divide.addEventListener("click", () => {
     counter += 1
     if (display.textContent == "" && operator == "" || done !== 0 && operator !== "" || display.textContent == "Not Possible !") {
@@ -335,7 +343,7 @@ equals.addEventListener("click", () => {
         secondNumber = 0
         counter = 0
         done = 1
-    } else if (display.textContent == "" && done == 0 || firstNumber == display.textContent && done == 1) {
+    } else if (display.textContent == "" && done == 0 || firstNumber == display.textContent && done == 1 || decimalCounter == 1 && display.textContent == ".") {
         alert("Please choose a number first !")
     } else if (operator == "" && done == 1){
         alert("Please choose a number or operator first !")
@@ -363,17 +371,29 @@ clear.addEventListener("click", () => {
 
 function addition(a, b) {
     let sum = Number(a + b)
-    return sum
+    if (Number.isInteger(sum)) {
+        return sum
+    } else {
+        return Math.round(sum * 10) / 10
+    }
 }
 
 function subtraction(a, b) {
     let difference = a - b
-    return difference
+    if (Number.isInteger(difference)) {
+        return difference
+    } else {
+        return Math.round(difference * 10) / 10
+    }
 }
 
 function multiplication(a, b) {
     let product = a * b
-    return product
+    if (Number.isInteger(product)) {
+        return product
+    } else {
+        return Math.round(product * 10) / 10
+    }
 }
 function division(a, b) {
     let quotient = a / b
